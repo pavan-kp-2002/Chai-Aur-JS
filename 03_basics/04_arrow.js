@@ -34,3 +34,21 @@ const chai = () => {
 }
 
 chai()
+
+// Arrow functions types
+
+//basic
+// const addTwo = (num1, num2) => {
+//     return num1 + num2
+// }
+
+// Single line and implicit return
+// const addTwo = (num1, num2) => num1 + num2;
+
+const addTwo = (num1, num2) => (num1 + num2)
+
+const returnName = () => ({name: "Pavan"})
+
+console.log(returnName())
+
+console.log(addTwo(4, 5))
